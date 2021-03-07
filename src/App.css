@@ -1,8 +1,8 @@
 :root {
     --mainRed: #e1897b;
-    --mainWhite:#f3f3f3;
-    --mainBrown: #bf7667;
-    --darkRed: #c46c64;
+    --mainWhite: #f3f3f3;
+    --mainBrown: #a15445;
+    --darkBrown: #592f26;
 }
 body {
     font-family: 'Old Standard TT', serif !important;
@@ -11,5 +11,33 @@ body {
 }
 .special-text {
     font-family: 'Satisfy', cursive;
+    color: var(--mainBrown);
+}
+.logo-store{
+    width:auto;
+    height:6rem;
+}
+.navbar{
+    background: var(--mainRed);
+    color: var(--mainWhite);
+}
+.nav-link {
+    color: var(--mainWhite);
+    font-size: 1.3rem;
+    text-transform: capitalize;
+}
+.nav-link:hover{
+    color:var(--darkBrown);
+}
+.store-button {
+    background: transparent;
+    color: var(--mainWhite);
+    border: 0.1rem solid var(--mainWhite);
+    padding: 0.5rem;
+    text-transform: uppercase;
+}
+.store-button:hover{
+    background:var(--mainWhite);
     color: var(--mainRed);
 }
+
