@@ -5,7 +5,7 @@ import logo from '../logo.jpg';
 export default class Navbar extends Component {
     render() {
         return (
-            <div className="navbar navbar-expand-sm  px-sm-5">
+            <div className="navbar navbar-expand-sm px-sm-5">
                 <Link to="/" className="">
                     <img src={logo} alt="logo-store" className="navbar-brand logo-store " />
                 </Link>

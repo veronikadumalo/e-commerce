@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
+import Title from './Title';
 
 export default class Contact extends Component {
     render() {
         return (
-            <div>
-                <h1>Contact</h1>
-            </div>
+            <React.Fragment>
+                <Title title="contact" />
+            </React.Fragment> 
             );
     }
 }

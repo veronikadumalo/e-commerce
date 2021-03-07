@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
+import Title from './Title';
 
 export default class ProductsList extends Component {
     render() {
         return (
-            <div>
-                <h1>Productlist</h1>
-            </div>
+            <React.Fragment>
+                <Title title="our products" />
+            </React.Fragment> 
         );
     }
 }
