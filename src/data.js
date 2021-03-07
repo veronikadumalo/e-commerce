@@ -25,7 +25,7 @@ export const storeProducts = [{
 }, {
     id: 3,
     price: 399,
-    title: "blue electrician longsleeve",
+    title: "blue long sleeve",
     img: "img/blue-electrician-longsleeve.jpg",
     moreImg: ["img/blue-electrician-longsleeve.jpg","img/blue-electrician-longsleeve1.jpg","img/blue-electrician-longsleeve2.jpg","img/blue-electrician-longsleeve3.jpg",],
     info: "",
@@ -37,7 +37,7 @@ export const storeProducts = [{
 }, {
     id: 4,
     price: 399,
-    title: "white longsleeve",
+    title: "white long sleeve",
     img: "img/white-longsleeve.jpg",
     moreImg: ["img/white-longsleeve.jpg", "img/white-longsleeve1.jpg", "img/white-longsleeve2.jpg", "img/white-longsleeve3.jpg"],
     info: "",
@@ -49,7 +49,7 @@ export const storeProducts = [{
 }, {
     id: 5,
     price: 399,
-    title: "black longsleeve",
+    title: "black long sleeve",
     img: "img/black-longsleeve.jpg",
     moreImg: ["img/black-longsleeve.jpg", "img/black-longsleeve1.jpg", "img/black-longsleeve2.jpg", "img/black-longsleeve3.jpg"],
     info: "",
@@ -104,7 +104,7 @@ export const storeProducts = [{
     selectedSize: "",
     count: 0,
     total: 0
-}{
+},{
     id: 10,
     price: 1700,
     title: "grey sportsuit",
@@ -131,7 +131,7 @@ export const storeProducts = [{
 }, {
     id: 12,
     price: 475,
-    title: "brown long sleeve on one shoulder",
+    title: "brown long sleeve",
     img: "img/brown-one-shoulder.jpg",
     moreImg: ["img/brown-one-shoulder.jpg", "img/brown-one-shoulder1.jpg", "img/brown-one-shoulder2.jpg",],
     info: "",
@@ -143,7 +143,7 @@ export const storeProducts = [{
 }, {
     id: 13,
     price: 475,
-    title: "grey long sleeve on one shoulder",
+    title: "grey long sleeve",
     img: "img/grey-one-shoulder.jpg",
     moreImg: ["img/grey-one-shoulder.jpg", "img/grey-one-shoulder1.jpg", "img/grey-one-shoulder2.jpg"],
     info: "",
@@ -155,7 +155,7 @@ export const storeProducts = [{
 }, {
     id: 14,
     price: 475,
-    title: "black long sleeve on one shoulder",
+    title: "black long sleeve ",
     img: "img/black-one-shoulder.jpg",
     moreImg: ["img/black-one-shoulder.jpg", "img/black-one-shoulder.jpg"],
     info: "",
@@ -224,28 +224,18 @@ export const storeProducts = [{
     selectedSize: "",
     count: 0,
     total: 0
-}, {
-    id: 20,
-    price: ,
-    title: ,
-    img: ,
-    moreImg: [],
-    info: ,
-    size: ["xs","s", "m", "l", "xl"],
-    inCart: false,
-    selectedSize: "",
-    count: 0,
-    total: 0
-}, {
-    id: 21,
-    price: ,
-    title: ,
-    img: ,
-    moreImg: [],
-    info: ,
-    size: ["xs","s", "m", "l", "xl"],
-    inCart: false,
-    selectedSize: "",
-    count: 0,
-    total: 0
 }];
+
+export const detailProduct = {
+    id: 1,
+    price: 299,
+    title: "black top",
+    img: "img/black-top.jpg",
+    moreImg: ["img/black-top.jpg", "img/black-top1.jpg", "img/black-top2.jpg", "img/black-top3.jpg", "img/black-top4.jpg", "img/black-top5.jpg"],
+    info: "",
+    size: ["xs", "s", "m", "l", "xl"],
+    inCart: false,
+    selectedSize: "",
+    count: 0,
+    total: 0
+};
