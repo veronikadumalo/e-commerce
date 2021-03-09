@@ -7,22 +7,36 @@ import { ProductConsumer } from '../context';
 
 export default class Product extends Component {
     render() {
-        const { id, title, price, img, inCart } = this.props.product;
+        const { id, title, price, img, inCart, imgOver } = this.props.product;
         return (
-            <div className="col-9 mx-auto col-md-6 col-lg-3 my-3">
+            <ProductWrapper className="col-9 mx-auto col-md-6 col-lg-3 my-3 ">
                 <div className="card">
                     <ProductConsumer>
                         {value => (
-                            <div className="img-container ">
+                            <div className="img-container"
+                                onClick={() => {
+                                    value.handleDetail(id);
+                                }}>
                                 <Link to="/details">
-                                    <img src={img} alt="product" className="card-img-top" />
+                                    <img src={img}
+                                        alt="product"
+                                        className="card-img-top"
+                                        onMouseEnter={() => {
+                                            this.setState({
+                                                img: imgOver
+                                            })
+                                        }}
+                                    />
                                 </Link>
                                 <button
                                     className="cart-btn"
                                     disabled={inCart ? true : false}
+                                    onClick={() => {
+                                        value.addToCart(id);
+                                    }}
                                 >
                                     {inCart ? (
-                                        <p className="text-capitalize" disabled>{" "}in cart</p>
+                                        <p className="text-capitalize mb-0" disabled>{" "}in cart</p>
                                     ) : (
                                             <i className="fas fa-cart-plus" />
                                             )}
@@ -30,13 +44,56 @@ export default class Product extends Component {
                             </div>
                             )}
                     </ProductConsumer>
-                    <div className="cart-footer d-flex justify-content-between">
-                        <p className="text-capitalize align-self-center">{title}</p>
-                        <p className="text-uppercase">{price}<span>uah</span></p>
+                    <div className="card-footer d-flex justify-content-between py-3 px-2">
+                        <p className="text-capitalize align-self-center mb-0">{title}</p>
+                        <p className="text-uppercase font-italic mb-0">{price}<span>uah</span></p>
                     </div>
                 </div>
            
-            </div>
+            </ProductWrapper>
         );
     } 
 }
+
+const ProductWrapper = styled.div`
+.card{
+border:none;  
+transition:all 0.3s linear;     
+}
+.img-container{
+position:relative;
+overflow:hidden;
+}
+.card-footer{
+background: transparent;
+border-top: transparent;
+transition:all 0.3s linear; 
+}
+&:hover{
+.card{
+box-shadow:2px 2px 5px 0 rgba(0,0,0,0.1);
+}
+.card-footer{
+background:rgba(252,252,252);
+}
+}
+.cart-btn{
+position:absolute;
+bottom:0;
+right: 0;
+padding: 0.3rem 0.6rem ;
+background: var(--mainRed);
+color: var(--mainWhite);
+border:none;
+font-size: 1.4rem;
+transform: translate(100%, 100%);
+transition: all 0.4s linear;
+}
+.img-container:hover .cart-btn{
+transform: translate(0, 0);
+}
+.cart-btn:hover{
+color:var(--mainBrown);
+cursor:pointer;
+}
+`;
