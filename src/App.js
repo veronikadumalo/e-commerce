@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import React, { Component } from 'react';
 import { Switch, Route } from 'react-router-dom';
@@ -11,6 +10,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Footer from './components/Footer';
 import AboutUs from './components/AboutUs';
 import Contact from './components/Contact';
+import 'react-slideshow-image/dist/styles.css'
 
 
 function App() {
