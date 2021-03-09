@@ -3,6 +3,7 @@ import { ProductConsumer } from '../context';
 import { Link } from 'react-router-dom';
 import 'react-slideshow-image/dist/styles.css';
 import Slideshow from './Slideshow';
+import { FormCheck } from 'react-bootstrap';
 
 
 export default class Details extends Component {
@@ -14,13 +15,15 @@ export default class Details extends Component {
                 {value => {
                     const { id, title, price, info, inCart, size, selectedSize } = value.detailProduct;
                     return (
-                        <div className="container py-3">
+                        <div className="container py-3 my-3">
                             <div className="row">
                                 <div className="col-10 col-md-6 mx-auto">
                                     <Slideshow />
                                 </div>
-                                <div className="col-10 col-md-6 mx-auto">
-                                    
+                                <div className="col-10 col-md-6 mx-auto text-capitalize">
+                                    <h1 className="">{title}</h1>
+                                    <h4>{price}<span className="text-uppercase">uah</span></h4>
+                                    <span>size:</span>
                                 </div>
                             </div>
                             

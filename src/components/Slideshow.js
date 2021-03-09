@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import { ProductConsumer } from '../context';
 import { Slide } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css';
+import styled from 'styled-components';
+
 
 export default class Slideshow extends Component {
     constructor(){
@@ -26,16 +28,18 @@ export default class Slideshow extends Component {
                 {value => {
                     const { moreImg } = value.detailProduct;
                     const properties = {
-                        duration: 5000,
+                        duration: 3000,
                         autoplay: false,
                         transitionDuration: 500,
                         arrows: false,
                         infinite: true,
                         easing: "ease",
                         indicators: (i) =>
-                            <div className="indicator">
-                                <img src={moreImg[i ]} />
-                            </div>
+                            <ImgGallery className="col">
+                                <img src={moreImg[i]} className="img-fluid " />
+                            </ImgGallery>
+                            
+                            
                     };
                     return (
                         <div>
@@ -50,7 +54,8 @@ export default class Slideshow extends Component {
                                     </div>
                                     ))}
                             </Slide>
-                        </div>
+                            </div>
+                            
                         <div className="slide-container buttons">
                             
                         </div>
@@ -63,3 +68,13 @@ export default class Slideshow extends Component {
             );
     }
 }
+
+const ImgGallery = styled.div`
+{
+
+}
+.img-fluid{
+cursor:pointer;
+
+}
+`;
