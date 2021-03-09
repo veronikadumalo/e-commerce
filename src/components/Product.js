@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import { ProductConsumer } from '../context';
+import HoverImage from 'react-hover-image';
 
 
 
@@ -9,7 +10,7 @@ export default class Product extends Component {
     render() {
         const { id, title, price, img, inCart, imgOver } = this.props.product;
         return (
-            <ProductWrapper className="col-9 mx-auto col-md-6 col-lg-3 my-3 ">
+            <ProductWrapper className="col-9 mx-auto col-md-6 col-lg-3 my-3">
                 <div className="card">
                     <ProductConsumer>
                         {value => (
@@ -18,14 +19,10 @@ export default class Product extends Component {
                                     value.handleDetail(id);
                                 }}>
                                 <Link to="/details">
-                                    <img src={img}
+                                    <HoverImage src={img}
                                         alt="product"
                                         className="card-img-top"
-                                        onMouseEnter={() => {
-                                            this.setState({
-                                                img: imgOver
-                                            })
-                                        }}
+                                        hoverSrc={ imgOver}
                                     />
                                 </Link>
                                 <button
@@ -68,6 +65,9 @@ overflow:hidden;
 background: transparent;
 border-top: transparent;
 transition:all 0.3s linear; 
+}
+.card-img-top:hover{
+transition:all 1s linear; 
 }
 &:hover{
 .card{
