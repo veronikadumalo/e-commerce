@@ -40,4 +40,8 @@ body {
     background:var(--mainWhite);
     color: var(--mainRed);
 }
+.size-select{
+    border: 0.1rem solid red;
+}
+
 

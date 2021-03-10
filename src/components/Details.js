@@ -17,14 +17,20 @@ export default class Details extends Component {
                     const { id, title, price, info, inCart, size, selectedSize } = value.detailProduct;
                     return (
                         <div className="container py-3 my-3">
-                            <div className="row">
+                            <div className="row ">
                                 <div className="col-10 col-md-6 mx-auto">
-                                    <Slideshow />
+                                    <Slideshow className="" />
                                 </div>
-                                <div className="col-10 col-md-6 mx-auto text-capitalize">
+                                <div className="col-10 col-md-6 mx-auto text-capitalize pl-5 mt-5 pt-5">
                                     <h1 className="">{title}</h1>
                                     <h4>{price}<span className="text-uppercase">uah</span></h4>
-                                    <span>size:</span><SizeSelect />
+                                    <div className="row mx-auto my-5 align-items-end">
+                                        <h5 className="mr-2">size:</h5>
+                                        <div className="w-50">
+                                            <SizeSelect  />
+                                        </div>
+                                    </div>
+                                    
                                 </div>
                             </div>
                             
