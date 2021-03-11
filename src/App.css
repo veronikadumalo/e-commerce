@@ -43,5 +43,16 @@ body {
 .size-select{
     border: 0.1rem solid red;
 }
+.detail-button {
+    background: transparent;
+    color: var(--mainRed);
+    border: 0.1rem solid var(--mainRed);
+    padding: 0.5rem;
+    text-transform: uppercase;
+}
+.detail-button:hover{
+    background:var(--mainRed);
+    color: var(--mainWhite);
+}
 
 

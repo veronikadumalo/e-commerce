@@ -14,14 +14,14 @@ export default class Details extends Component {
         return (
             <ProductConsumer>
                 {value => {
-                    const { id, title, price, info, inCart, size, selectedSize } = value.detailProduct;
+                    const { id, title, price,  inCart, size, selectedSize } = value.detailProduct;
                     return (
                         <div className="container py-3 my-3">
                             <div className="row ">
-                                <div className="col-10 col-md-6 mx-auto">
+                                <div className="col-10 col-md-6  mx-auto">
                                     <Slideshow className="" />
                                 </div>
-                                <div className="col-10 col-md-6 mx-auto text-capitalize pl-5 mt-5 pt-5">
+                                <div className="col-10 col-md-6 mx-auto text-capitalize pl-5 pt-5 mt-5">
                                     <h1 className="">{title}</h1>
                                     <h4>{price}<span className="text-uppercase">uah</span></h4>
                                     <div className="row mx-auto my-5 align-items-end">
@@ -30,7 +30,14 @@ export default class Details extends Component {
                                             <SizeSelect  />
                                         </div>
                                     </div>
-                                    
+                                    <div className="row">
+                                        <button className="detail-button "
+                                            onClick=""
+                                        >add to cart</button>
+                                        <Link to="/">
+                                            <button className="detail-button ml-4">back to products</button>
+                                        </Link>   
+                                    </div>
                                 </div>
                             </div>
                             

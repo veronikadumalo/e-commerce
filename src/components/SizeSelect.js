@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Select from 'react-select';
+import Formik from 'formik';
 
 const size = [
     { value: 'xs', label: 'XS' },
@@ -34,7 +35,6 @@ export default class SizeSelect extends Component {
                     }
                 })}
                 placeholder="Select size"
-                
             />
             );
     }
