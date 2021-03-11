@@ -35,15 +35,11 @@ export default class Slideshow extends Component {
                         infinite: true,
                         easing: "ease",
                         indicators: (i) =>
-                            <ImgGallery className="col">
-                                <img src={moreImg[i]} className="img-fluid " />
-                            </ImgGallery>
-                            
-                            
+                            <img src={moreImg[i]} className=" slideshow mx-2" />
                     };
                     return (
                         <div>
-                            <div className="slide-container">
+                            <div className="slide-container mr-auto">
                             <Slide ref={this.slideRef} {...properties}>
                                 {moreImg.map((each, index) => (
                                     <div
@@ -60,8 +56,6 @@ export default class Slideshow extends Component {
                             
                         </div>
                     </div>
-                        
-      
                         );
                 }}
             </ProductConsumer>
@@ -69,12 +63,3 @@ export default class Slideshow extends Component {
     }
 }
 
-const ImgGallery = styled.div`
-{
-
-}
-.img-fluid{
-cursor:pointer;
-
-}
-`;

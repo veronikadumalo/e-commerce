@@ -251,7 +251,7 @@ export const detailProduct = {
     title: "black top",
     img: "img/black-top.jpg",
     imgOver: "img/black-top1.jpg",
-    moreImg: ["img/black-top.jpg", "img/black-top1.jpg", "img/black-top2.jpg", "img/black-top3.jpg",  "img/black-top5.jpg"],
+    moreImg: ["img/black-top.jpg",  "img/black-top2.jpg", "img/black-top3.jpg",  "img/black-top5.jpg"],
     info: "",
     size: ["xs", "s", "m", "l", "xl"],
     inCart: false,

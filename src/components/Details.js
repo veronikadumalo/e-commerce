@@ -30,13 +30,13 @@ export default class Details extends Component {
                                             <SizeSelect  />
                                         </div>
                                     </div>
-                                    <div className="row">
-                                        <button className="detail-button "
-                                            onClick=""
-                                        >add to cart</button>
-                                        <Link to="/">
-                                            <button className="detail-button ml-4">back to products</button>
-                                        </Link>   
+                                    <div >
+                                            <button className="detail-button mr-3"
+                                                onClick=""
+                                            >add to cart</button>
+                                            <Link to="/">
+                                                <button className="detail-button ">back to products</button>
+                                            </Link>  
                                     </div>
                                 </div>
                             </div>
