@@ -7,6 +7,7 @@ import SizeSelect from './SizeSelect';
 
 
 
+
 export default class Details extends Component {
     
     render() {
@@ -19,7 +20,7 @@ export default class Details extends Component {
                         <div className="container py-3 my-3">
                             <div className="row ">
                                 <div className="col-10 col-md-6  mx-auto">
-                                    <Slideshow className="" />
+                                    
                                 </div>
                                 <div className="col-10 col-md-6 mx-auto text-capitalize pl-5 pt-5 mt-5">
                                     <h1 className="">{title}</h1>
