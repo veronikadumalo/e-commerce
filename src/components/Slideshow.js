@@ -49,12 +49,11 @@ export default class Slideshow extends Component {
                                         
                                     </div>
                                     ))}
-                            </Slide>
+                                </Slide>
+                            
                             </div>
                             
-                        <div className="slide-container buttons">
                             
-                        </div>
                     </div>
                         );
                 }}
