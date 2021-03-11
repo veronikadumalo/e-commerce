@@ -8,10 +8,15 @@ class ProductProvider extends Component {
         products: storeProducts,
         detailProduct: detailProduct
     };
-    handleDetail = () => {
-        console.log("detail");
+    getItem = (id) => {
+        const product = this.state.products.find(item => item.id === id);
+        return product;
+
+    }
+    handleDetail = (id) => {
+        
     };
-    addToCart = () => {
+    addToCart = (id) => {
         console.log("add to cart");
     };
     render() {

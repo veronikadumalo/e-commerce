@@ -31,9 +31,13 @@ export default class Details extends Component {
                                         </div>
                                     </div>
                                     <div >
-                                            <button className="detail-button mr-3"
-                                                onClick=""
-                                            >add to cart</button>
+                                        <button className="detail-button mr-3"
+                                            disabled={inCart ? true:false}
+                                            onClick={() => {
+                                                value.addToCart(id)
+                                            }}
+                                        >{inCart ? "in cart":"add to cart" }
+                                        </button>
                                             <Link to="/">
                                                 <button className="detail-button ">back to products</button>
                                             </Link>  
