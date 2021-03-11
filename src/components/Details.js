@@ -15,12 +15,12 @@ export default class Details extends Component {
         return (
             <ProductConsumer>
                 {value => {
-                    const { id, title, price,  inCart, size, selectedSize } = value.detailProduct;
+                    const { id, title, price,  inCart, size } = value.detailProduct;
                     return (
                         <div className="container py-3 my-3">
                             <div className="row ">
                                 <div className="col-10 col-md-6  mx-auto">
-                                    
+                                    < Slideshow />
                                 </div>
                                 <div className="col-10 col-md-6 mx-auto text-capitalize pl-5 pt-5 mt-5">
                                     <h1 className="">{title}</h1>
