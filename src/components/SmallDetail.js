@@ -8,9 +8,9 @@ export default class SmallDetail extends Component {
 		return (
 			<ProductConsumer>
 				{value => {
-					const { openSmallDetail, closeSmallDetail } = value;
-					const { img, title, price, selectedSize } = value.detailProduct;
-					if (!openSmallDetail) {
+					const { smallDetail, closeSmallDetail } = value;
+					const { img, title, price, selectedSize } = value.smallDetailProduct;
+					if (!smallDetail) {
 						return null;
 					}
 					else {
@@ -22,20 +22,21 @@ export default class SmallDetail extends Component {
 											<h5>product added to cart</h5>
 											<img src={img} alt="product" className="img-fluid p-3" />
 											<h4>{title}</h4>
-											<h5>{price}<span className="text-uppercase">uah</span></h5>
+											<h6>{price}<span className="text-uppercase">uah</span></h6>
+											<h6>Size: {selectedSize}</h6>
 											<Link to="/">
 												<button
 													className="detail-button"
 													onClick={() => {
-
+														closeSmallDetail();
 												}}>continue shopping
 												</button>
 											</Link>
-											<Link>
+											<Link to="/cart">
 												<button
 													className="detail-button"
 													onClick={() => {
-
+														closeSmallDetail();
 												}}>go to cart
 												</button>
 											</Link>

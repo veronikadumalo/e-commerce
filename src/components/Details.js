@@ -39,7 +39,8 @@ export default class Details extends Component {
                                         <button className="detail-button mr-3"
                                             disabled={inCart ? true:false}
                                             onClick={() => {
-                                                value.addToCart(id)
+                                                value.addToCart(id);
+                                                value.openSmallDetail(id);
                                             }}
                                         >{inCart ? "in cart":"add to cart" }
                                         </button>

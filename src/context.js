@@ -49,10 +49,15 @@ class ProductProvider extends Component {
         });
     }
     openSmallDetail = (id) => {
-
-    }
-    closeSmallDetail = (id) => {
-
+        const product = this.getItem(id);
+        this.setState(() => {
+            return { smallDetailProduct: product, smallDetail: true }
+        });
+    };
+    closeSmallDetail = () => {
+        this.setState(() => {
+            return { smallDetail: false }
+        });
     }
 
     
