@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import 'react-slideshow-image/dist/styles.css';
 import Slideshow from './Slideshow';
 import SizeSelect from './SizeSelect';
+import Size from './Size'
 
 
 
@@ -46,6 +47,7 @@ export default class Details extends Component {
                                                 <button className="detail-button ">back to products</button>
                                             </Link>  
                                     </div>
+                                    <Size/>
                                 </div>
                             </div>
                             
