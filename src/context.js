@@ -66,6 +66,8 @@ class ProductProvider extends Component {
                 sSize: this.sSize,
                 mSize: this.mSize,
                 lSize: this.lSize,
+                openSmallDetail: this.openSmallDetail,
+                closeSmallDetail: this.closeSmallDetail
             }}>
                 {this.props.children}
             </ProductContext.Provider>
