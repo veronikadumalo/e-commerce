@@ -15,15 +15,15 @@ export default class SmallDetail extends Component {
 					}
 					else {
 						return (
-							<div>
+							<SmallDetailContainer>
 								<div className="container">
 									<div className="row">
-										<div className="col-8 mx-auto col-md-6 col-ld-4 text-center text-capitalize p-5">
+										<div className="col-8 mx-auto col-md-6 col-lg-4 text-center text-capitalize p-4 detail-card">
 											<h5>product added to cart</h5>
-											<img src={img} alt="product" className="img-fluid" />
-											<h5>{title}</h5>
+											<img src={img} alt="product" className="img-fluid p-3" />
+											<h4>{title}</h4>
 											<h5>{price}<span className="text-uppercase">uah</span></h5>
-											<Link>
+											<Link to="/">
 												<button
 													className="detail-button"
 													onClick={() => {
@@ -42,7 +42,7 @@ export default class SmallDetail extends Component {
 										</div>
 									</div>
 								</div>
-							</div>
+							</SmallDetailContainer>
 							);
 					}
 				}}
@@ -50,3 +50,18 @@ export default class SmallDetail extends Component {
 			);
 	}
 }
+
+const SmallDetailContainer = styled.div`
+position:fixed;
+top:0;
+bottom:0;
+left:0;
+right:0;
+display:flex;
+align-items:center;
+justufy-content:center;
+background: rgba(0,0,0,0.2);
+.detail-card{
+background:var(--mainWhite);
+}
+`;
