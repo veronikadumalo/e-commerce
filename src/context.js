@@ -25,6 +25,7 @@ class ProductProvider extends Component {
     sSize = (id) => {
         const product = this.getItem(id);
         product.selectedSize = "s";
+        product.size = true;
         this.setState(() => {
             return { detailProduct: product }
         });
