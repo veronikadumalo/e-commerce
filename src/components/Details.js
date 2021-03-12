@@ -35,7 +35,7 @@ export default class Details extends Component {
                                     <div className="mb-5">
                                         <Size />
                                     </div>
-                                    <div className="pt-5">
+                                    <div className="pt-2">
                                         <button className="detail-button mr-3"
                                             disabled={inCart ? true:false}
                                             onClick={() => {

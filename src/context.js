@@ -6,7 +6,9 @@ const ProductContext = React.createContext();
 class ProductProvider extends Component {
     state = {
         products: storeProducts,
-        detailProduct: detailProduct
+        detailProduct: detailProduct,
+        smallDetail: false,
+        smallDetailProduct: detailProduct
     };
     getItem = (id) => {
         const product = this.state.products.find(item => item.id === id);
@@ -33,6 +35,7 @@ class ProductProvider extends Component {
     mSize = (id) => {
         const product = this.getItem(id);
         product.selectedSize = "m";
+        product.size = true;
         this.setState(() => {
             return { detailProduct: product }
         });
@@ -40,9 +43,16 @@ class ProductProvider extends Component {
     lSize = (id) => {
         const product = this.getItem(id);
         product.selectedSize = "l";
+        product.size = true;
         this.setState(() => {
             return { detailProduct: product }
         });
+    }
+    openSmallDetail = (id) => {
+
+    }
+    closeSmallDetail = (id) => {
+
     }
 
     
