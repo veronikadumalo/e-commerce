@@ -28,11 +28,14 @@ export default class Details extends Component {
                                 <div className="col-10 col-md-6 mx-auto text-capitalize pl-5 pt-5 mt-5">
                                     <h1 className="">{title}</h1>
                                     <h4>{price}<span className="text-uppercase">uah</span></h4>
-                                    <div className="row mx-auto my-5 align-items-end">
+                                    <div className="row mx-auto mt-5 align-items-end">
                                         <h5 className="mr-2">size:</h5>
                                         <h5 className="text-uppercase">{selectedSize}</h5>
                                     </div>
-                                    <div >
+                                    <div className="mb-5">
+                                        <Size />
+                                    </div>
+                                    <div className="pt-5">
                                         <button className="detail-button mr-3"
                                             disabled={inCart ? true:false}
                                             onClick={() => {
@@ -44,7 +47,7 @@ export default class Details extends Component {
                                                 <button className="detail-button ">back to products</button>
                                             </Link>  
                                     </div>
-                                    <Size/>
+                                    
                                 </div>
                             </div>
                             

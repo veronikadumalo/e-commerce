@@ -9,9 +9,9 @@ export default class Size extends Component {
                     const { id } = value.detailProduct;
                     return (
                         <div>
-                            <button onClick={() => { value.sSize(id) }}>s</button>
-                            <button onClick={() => { value.mSize(id) }}>m</button>
-                            <button onClick={() => { value.lSize(id) }}>l</button>
+                            <button className="detail-button p-3 mr-3" onClick={() => { value.sSize(id) }}>s</button>
+                            <button className="detail-button p-3 mr-3" onClick={() => { value.mSize(id) }}>m</button>
+                            <button className="detail-button p-3" onClick={() => { value.lSize(id) }}>l</button>
                         </div>
                     )
                     console.log(value.detailProduct);
