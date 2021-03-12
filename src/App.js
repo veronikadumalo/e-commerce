@@ -11,6 +11,7 @@ import Footer from './components/Footer';
 import AboutUs from './components/AboutUs';
 import Contact from './components/Contact';
 import 'react-slideshow-image/dist/styles.css'
+import SmallDetail from './components/SmallDetail';
 
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
                 <Route path="/contact" component={Contact} />
                 <Route component={Default} />
             </Switch>
+            <SmallDetail />
             <Footer />
         </React.Fragment>
   );
