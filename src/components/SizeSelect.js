@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Select from 'react-select';
-import Formik from 'formik';
+
+
 
 const size = [
     { value: 'xs', label: 'XS' },
@@ -12,15 +13,16 @@ const size = [
 
 export default class SizeSelect extends Component {
     state = {
-        selectedSize: null
+        selectedSize: null,
     };
-    handleChange = selectedSize => {
-        this.setState({ selectedSize });
-        console.log(selectedSize);
+    handleChange = (selectedSize) => {
+        
+        this.setState({selectedSize})
     };
     render() {
         const { selectedSize } = this.state;
         return (
+    
             <Select
                 value={selectedSize}
                 onChange={this.handleChange}
@@ -39,3 +41,4 @@ export default class SizeSelect extends Component {
             );
     }
 }
+

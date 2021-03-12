@@ -15,8 +15,10 @@ export default class Details extends Component {
         return (
             <ProductConsumer>
                 {value => {
-                    const { id, title, price,  inCart, size } = value.detailProduct;
+                    const { id, title, price, inCart } = value.detailProduct;
+                  
                     return (
+                        
                         <div className="container py-3 my-3">
                             <div className="row ">
                                 <div className="col-10 col-md-6  mx-auto">
@@ -28,7 +30,8 @@ export default class Details extends Component {
                                     <div className="row mx-auto my-5 align-items-end">
                                         <h5 className="mr-2">size:</h5>
                                         <div className="w-50">
-                                            <SizeSelect  />
+                                            <SizeSelect />
+                                            
                                         </div>
                                     </div>
                                     <div >
