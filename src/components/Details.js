@@ -16,7 +16,7 @@ export default class Details extends Component {
         return (
             <ProductConsumer>
                 {value => {
-                    const { id, title, price, inCart } = value.detailProduct;
+                    const { id, title, price, inCart, selectedSize } = value.detailProduct;
                   
                     return (
                         
@@ -30,10 +30,7 @@ export default class Details extends Component {
                                     <h4>{price}<span className="text-uppercase">uah</span></h4>
                                     <div className="row mx-auto my-5 align-items-end">
                                         <h5 className="mr-2">size:</h5>
-                                        <div className="w-50">
-                                            <SizeSelect />
-                                            
-                                        </div>
+                                        <h5 className="">{selectedSize}</h5>
                                     </div>
                                     <div >
                                         <button className="detail-button mr-3"
