@@ -99,7 +99,7 @@ class ProductProvider extends Component {
                 lSize: this.lSize,
                 openSmallDetail: this.openSmallDetail,
                 closeSmallDetail: this.closeSmallDetail,
-                incrementCount: this.incrematCount,
+                incrematCount: this.incrematCount,
                 decrementCount: this.decrementCount,
                 removeCartProduct: this.removeCartProduct,
                 calculationTotal: this.calculationTotal,

@@ -1,8 +1,8 @@
 import React from 'react';
 
 export default function CartProduct({ item, value }) {
-    const { id, img, title, proce, selectedSize, count, total } = item;
-    const { inctementCount, decrementCount, removeCartProduct } = value;
+    const { id, img, title, price, selectedSize, count, total } = item;
+    const { incrematCount, decrementCount, removeCartProduct } = value;
     return (
         <div className="row">
             <div className="col-10 col-lg-2 mx-auto">
@@ -27,7 +27,7 @@ export default function CartProduct({ item, value }) {
                     >-</span>
                     <span className="btn mx-1">{count}</span>
                     <span className="btn mx-1"
-                        onClick={() => { incrementCount(id) }}
+                        onClick={() => { incrematCount(id) }}
                     >+</span>
                 </div>
             </div>
