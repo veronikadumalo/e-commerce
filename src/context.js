@@ -124,13 +124,13 @@ class ProductProvider extends Component {
                 this.calculationTotal();
         });
     }
-    calculationTotal = (id) => {
+    calculationTotal = () => {
         let subTotal = 0;
-        this.state.cart.map(item => (subTotal += item.total));
+        this.state.cart.map(item =>(subTotal += item.total));
         const total = subTotal + this.state.cartTax;
         this.setState(() => {
             return {
-                cartSubTotal: subTotal,
+                cartSubtotal: subTotal,
                 cartTotal: total
             }
         });
