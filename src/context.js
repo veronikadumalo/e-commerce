@@ -85,6 +85,8 @@ class ProductProvider extends Component {
         selectedCartProduct.total = selectedCartProduct.count * selectedCartProduct.price;
         this.setState(() => {
             return { cart: [...tempCart] }
+        }, () => {
+            this.calculationTotal();
         });
         
     }
@@ -98,7 +100,9 @@ class ProductProvider extends Component {
         }
         this.setState(() => {
                 return { cart: [...tempCart] }
-            });
+        }, () => {
+            this.calculationTotal();
+        });
     }
     removeCartProduct = (id) => {
         let tempProducts = [...this.state.products];
@@ -113,7 +117,10 @@ class ProductProvider extends Component {
             return {
                 cart: [...tempCart],
                 products: [...tempProducts]
-            }        });
+            }
+        }, () => {
+                this.calculationTotal();
+        });
     }
     calculationTotal = (id) => {
         let subTotal = 0;
