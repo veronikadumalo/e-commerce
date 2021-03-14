@@ -14,6 +14,18 @@ export default function CartTotalPrice({ value }) {
                                 clear cart
                             </button>
                         </Link>
+                        <h5>
+                            <span className="text-title">subtotal:</span>
+                            {cartSubtotal}
+                        </h5>
+                        <h5>
+                            <span className="text-title">tax:</span>
+                            {cartTax}
+                        </h5>
+                        <h5>
+                            <span className="text-title">total:</span>
+                            {cartTotal}
+                        </h5>
                     </div>
                 </div>
             </div>
