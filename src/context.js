@@ -10,7 +10,9 @@ class ProductProvider extends Component {
         cart: [],
         smallDetail: false,
         smallDetailProduct: detailProduct,
-        
+        cartSubtotal: 0,
+        cartTax : 50,
+        cartTotal: 0
     };
     getItem = (id) => {
         const product = this.state.products.find(item => item.id === id);
@@ -114,7 +116,15 @@ class ProductProvider extends Component {
             }        });
     }
     calculationTotal = (id) => {
-       
+        let subTotal = 0;
+        this.state.cart.map(item => (subTotal += item.total));
+        const total = subTotal + this.state.cartTax;
+        this.setState(() => {
+            return {
+                cartSubTotal: subTotal,
+                cartTotal: total
+            }
+        });
     }
     clearCart = (id) => {
 
