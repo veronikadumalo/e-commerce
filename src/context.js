@@ -98,7 +98,13 @@ class ProductProvider extends Component {
                 mSize: this.mSize,
                 lSize: this.lSize,
                 openSmallDetail: this.openSmallDetail,
-                closeSmallDetail: this.closeSmallDetail
+                closeSmallDetail: this.closeSmallDetail,
+                incrementCount: this.incrematCount,
+                decrementCount: this.decrementCount,
+                removeCartProduct: this.removeCartProduct,
+                calculationTotal: this.calculationTotal,
+                clearCart: this.clearCart
+
             }}>
                 {this.props.children}
             </ProductContext.Provider>
