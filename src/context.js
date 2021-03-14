@@ -5,7 +5,7 @@ const ProductContext = React.createContext();
 
 class ProductProvider extends Component {
     state = {
-        products: storeProducts,
+        products: [],
         detailProduct: detailProduct,
         cart: [],
         smallDetail: false,
@@ -14,6 +14,19 @@ class ProductProvider extends Component {
         cartTax : 50,
         cartTotal: 0
     };
+    setProducts = () => {
+        let tempProducts = [];
+        storeProducts.forEach(item => {
+            const singleItem = { ...item };
+            tempProducts = [...tempProducts, singleItem];
+        })
+        this.setState(() => {
+            return { products: tempProducts }
+        });
+    };
+    componentDidMount() {
+        this.setProducts();
+    }
     getItem = (id) => {
         const product = this.state.products.find(item => item.id === id);
         return product;
@@ -139,7 +152,9 @@ class ProductProvider extends Component {
         this.setState(() => {
             return {cart:[]}
         }, () => {
-                this.addTotals();
+                this.calculationTotal();
+                this.setProducts();
+                
         });
     }
     
@@ -162,6 +177,7 @@ class ProductProvider extends Component {
                 calculationTotal: this.calculationTotal,
                 clearCart: this.clearCart,
                 getCartProduct: this.getCartProduct,
+                setProducts: this.setProducts
 
 
             }}>
