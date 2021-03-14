@@ -62,7 +62,8 @@ body {
     cursor: pointer;
 }
 .cart-img{
-
+    width: 5rem;
+    height:auto;
 }
 
 

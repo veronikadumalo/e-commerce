@@ -71,7 +71,7 @@ class ProductProvider extends Component {
             return { smallDetail: false }
         });
     }
-    incrematCount = (id) => {
+    incrementCount = (id) => {
 
     }
     decrementCount = (id) => {
@@ -99,7 +99,7 @@ class ProductProvider extends Component {
                 lSize: this.lSize,
                 openSmallDetail: this.openSmallDetail,
                 closeSmallDetail: this.closeSmallDetail,
-                incrematCount: this.incrematCount,
+                incrementCount: this.incrementCount,
                 decrementCount: this.decrementCount,
                 removeCartProduct: this.removeCartProduct,
                 calculationTotal: this.calculationTotal,

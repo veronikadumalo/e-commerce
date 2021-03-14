@@ -4,7 +4,7 @@ export default class CartSubTitles extends Component {
     render() {
         return (
             <div className="container-fluid text-center text-uppercase d-none d-lg-block">
-                <div className="row">
+                <div className="row border-bottom">
                     <div className="col-10 col-lg-1 mx-auto">
                         <p>product</p> 
                     </div>
