@@ -72,10 +72,17 @@ class ProductProvider extends Component {
         });
     }
     getCartProduct = (id) => {
-        const cartProduct = cart.find(item => item.id === id);
+        const cartProduct = this.state.cart.find(item => item.id === id);
         return cartProduct;
     }
     incrementCount = (id) => {
+        let tempCart = [...this.state.cart];
+        const index = tempCart.indexOf(this.getCartProduct(id));
+        const selectedCartProduct = tempCart[index];
+        selectedCartProduct.count = selectedCartProduct.count + 1;
+        this.setState(() => {
+            return { cart: [...tempCart] }
+        });
         
     }
     decrementCount = (id) => {
@@ -107,7 +114,8 @@ class ProductProvider extends Component {
                 decrementCount: this.decrementCount,
                 removeCartProduct: this.removeCartProduct,
                 calculationTotal: this.calculationTotal,
-                clearCart: this.clearCart
+                clearCart: this.clearCart,
+                getCartProduct: this.getCartProduct 
 
             }}>
                 {this.props.children}
