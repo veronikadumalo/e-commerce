@@ -71,7 +71,21 @@ class ProductProvider extends Component {
             return { smallDetail: false }
         });
     }
+    incrematCount = (id) => {
 
+    }
+    decrementCount = (id) => {
+
+    }
+    removeCartProduct = (id) => {
+
+    }
+    calculationTotal = (id) => {
+
+    }
+    clearCart = (id) => {
+
+    }
     
     
     render() {
