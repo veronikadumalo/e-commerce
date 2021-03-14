@@ -136,8 +136,13 @@ class ProductProvider extends Component {
         });
     }
     clearCart = (id) => {
-
+        this.setState(() => {
+            return {cart:[]}
+        }, () => {
+                this.addTotals();
+        });
     }
+    
     
     
     render() {
@@ -156,7 +161,8 @@ class ProductProvider extends Component {
                 removeCartProduct: this.removeCartProduct,
                 calculationTotal: this.calculationTotal,
                 clearCart: this.clearCart,
-                getCartProduct: this.getCartProduct 
+                getCartProduct: this.getCartProduct,
+
 
             }}>
                 {this.props.children}
