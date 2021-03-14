@@ -26,11 +26,11 @@ export default function CartProduct({ item, value }) {
             </div>
             <div className="col-10 col-lg-1 mx-auto my-auto">
                 <div className="">
-                    <span className="cart-icon btn-count mx-1"
-                        onClick={() => { }}
+                    <span className="cart-icon btn-count mx-2"
+                        onClick={() => { decrementCount(id) }}
                     ><i className="fas fa-minus" /></span>
                     <span className="mx-2 ">{count}</span>
-                    <span className="cart-icon btn-count mx-1"
+                    <span className="cart-icon btn-count mx-2"
                         onClick={() => { incrementCount(id) }}
                     ><i className="fas fa-plus" /></span>
                 </div>

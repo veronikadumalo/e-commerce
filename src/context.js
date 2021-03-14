@@ -86,7 +86,20 @@ class ProductProvider extends Component {
         
     }
     decrementCount = (id) => {
-
+        let tempCart = [...this.state.cart];
+        const index = tempCart.indexOf(this.getCartProduct(id));
+        const selectedCartProduct = tempCart[index];
+        if (selectedCartProduct.count <= 1 ) {
+            this.setState(() => {
+                return { cart: [...tempCart] }
+            });
+        }
+        else {
+            selectedCartProduct.count = selectedCartProduct.count - 1;
+            this.setState(() => {
+                return { cart: [...tempCart] }
+            });
+        }
     }
     removeCartProduct = (id) => {
 
