@@ -80,6 +80,7 @@ class ProductProvider extends Component {
         const index = tempCart.indexOf(this.getCartProduct(id));
         const selectedCartProduct = tempCart[index];
         selectedCartProduct.count = selectedCartProduct.count + 1;
+        selectedCartProduct.total = selectedCartProduct.count * selectedCartProduct.price;
         this.setState(() => {
             return { cart: [...tempCart] }
         });
@@ -91,6 +92,7 @@ class ProductProvider extends Component {
         const selectedCartProduct = tempCart[index];
         if (selectedCartProduct.count > 1 ) {
             selectedCartProduct.count = selectedCartProduct.count - 1;
+            selectedCartProduct.total = selectedCartProduct.count * selectedCartProduct.price;
         }
         this.setState(() => {
                 return { cart: [...tempCart] }
@@ -112,7 +114,7 @@ class ProductProvider extends Component {
             }        });
     }
     calculationTotal = (id) => {
-
+       
     }
     clearCart = (id) => {
 
