@@ -42,7 +42,7 @@ export default function CartProduct({ item, value }) {
                 </div>
             </div>
             <div className="col-10 col-lg-1 mx-auto my-auto">
-                <span className="d-lg-none">total:</span>{total} <span>UAH</span>
+                <span className="d-lg-none">total: </span>{total} <span>UAH</span>
             </div>
         </div>
         );

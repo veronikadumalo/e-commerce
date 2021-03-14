@@ -71,8 +71,12 @@ class ProductProvider extends Component {
             return { smallDetail: false }
         });
     }
+    getCartProduct = (id) => {
+        const cartProduct = cart.find(item => item.id === id);
+        return cartProduct;
+    }
     incrementCount = (id) => {
-
+        
     }
     decrementCount = (id) => {
 
