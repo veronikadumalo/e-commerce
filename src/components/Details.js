@@ -16,7 +16,7 @@ export default class Details extends Component {
         return (
             <ProductConsumer>
                 {value => {
-                    const { id, title, price, inCart, selectedSize, size} = value.detailProduct;
+                    const { id, title, price, selectedSize, inCart} = value.detailProduct;
                     const { addToCartButton } = value;
                     return (
                         
@@ -37,7 +37,7 @@ export default class Details extends Component {
                                     </div>
                                     <div className="pt-2">
                                         <button className="detail-button mr-3"
-                                            
+                                            disabled={inCart ? true:false}
                                             onClick={() => {
                                                 value.addToCart(id);
                                                 value.openSmallDetail(id);
