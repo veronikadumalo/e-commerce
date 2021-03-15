@@ -12,7 +12,9 @@ class ProductProvider extends Component {
         smallDetailProduct: detailProduct,
         cartSubtotal: 0,
         cartTax : 50,
-        cartTotal: 0
+        cartTotal: 0,
+        addToCartButton: "select size",
+        addTo: "add"
     };
     setProducts = () => {
         let tempProducts = [];
@@ -35,6 +37,8 @@ class ProductProvider extends Component {
         const product = this.getItem(id);
         this.setState(() => {
             return { detailProduct:product}
+        }, () => {
+            this.nameButton(id)
         })
         console.log( detailProduct, product); 
     };
@@ -53,12 +57,34 @@ class ProductProvider extends Component {
         })
         
     };
+    nameButton = (id) => {
+        const product = this.getItem(id);
+        let select = "";
+        if (product.size !== true && product.inCart !== true) {
+             select = "select size";        }
+        else if (product.size !== false && product.inCart !== true) {
+             select = "add to cart";
+        }
+        else {
+             select = "in cart";
+        }
+        this.setState(() => {
+                return {
+                    addToCartButton: select
+                }
+            });
+    }
     sSize = (id) => {
         const product = this.getItem(id);
         product.selectedSize = "s";
         product.size = true;
+        
         this.setState(() => {
-            return { detailProduct: product }
+            return {
+                detailProduct: product,
+            }
+        }, () => {
+                this.nameButton(id);
         });
     }
     mSize = (id) => {
@@ -67,6 +93,8 @@ class ProductProvider extends Component {
         product.size = true;
         this.setState(() => {
             return { detailProduct: product }
+        }, () => {
+            this.nameButton(id);
         });
     }
     lSize = (id) => {
@@ -75,6 +103,8 @@ class ProductProvider extends Component {
         product.size = true;
         this.setState(() => {
             return { detailProduct: product }
+        },() => {
+            this.nameButton(id);
         });
     }
     openSmallDetail = (id) => {
@@ -177,7 +207,8 @@ class ProductProvider extends Component {
                 calculationTotal: this.calculationTotal,
                 clearCart: this.clearCart,
                 getCartProduct: this.getCartProduct,
-                setProducts: this.setProducts
+                setProducts: this.setProducts,
+                nameButton: this.nameButton
 
 
             }}>

@@ -17,7 +17,7 @@ export default class Details extends Component {
             <ProductConsumer>
                 {value => {
                     const { id, title, price, inCart, selectedSize, size} = value.detailProduct;
-                  
+                    const { addToCartButton } = value;
                     return (
                         
                         <div className="container py-3 my-3">
@@ -37,12 +37,12 @@ export default class Details extends Component {
                                     </div>
                                     <div className="pt-2">
                                         <button className="detail-button mr-3"
-                                            disabled={inCart ? true:false}
+                                            
                                             onClick={() => {
                                                 value.addToCart(id);
                                                 value.openSmallDetail(id);
                                             }}
-                                        >{inCart ? "in cart":"add to cart" }
+                                        >{addToCartButton}
                                         </button>
                                             <Link to="/">
                                                 <button className="detail-button ">back to products</button>
