@@ -85,12 +85,14 @@ body {
 }
 .banner-button {
     position: absolute;
-    left: 45%;
-    top: 45%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
     background: rgba(0,0,0,0.15);
     color: var(--mainWhite);
     border-color: var(--mainWhite);
-    padding:0.9rem;
+    padding: 0.9rem;
 }
 .see-more-text{
     color: var(--mainBrown);
