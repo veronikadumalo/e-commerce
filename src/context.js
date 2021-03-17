@@ -13,8 +13,7 @@ class ProductProvider extends Component {
         cartSubtotal: 0,
         cartTax : 50,
         cartTotal: 0,
-        addToCartButton: "select size",
-        addTo: "add"
+       
     };
     setProducts = () => {
         let tempProducts = [];
@@ -36,11 +35,8 @@ class ProductProvider extends Component {
     handleDetail = (id) => {
         const product = this.getItem(id);
         this.setState(() => {
-            return { detailProduct:product}
-        }, () => {
-            this.nameButton(id)
-        })
-        console.log( detailProduct, product); 
+            return { detailProduct: product }
+        });
     };
     addToCart = (id) => {
         let tempProducts = [...this.state.products];
@@ -57,56 +53,6 @@ class ProductProvider extends Component {
         })
         
     };
-    nameButton = (id) => {
-        const product = this.getItem(id);
-        let select = "";
-        if (product.size !== true && product.inCart !== true) {
-             select = "select size";        }
-        else if (product.size !== false && product.inCart !== true) {
-             select = "add to cart";
-        }
-        else {
-             select = "in cart";
-        }
-        this.setState(() => {
-                return {
-                    addToCartButton: select
-                }
-            });
-    }
-    sSize = (id) => {
-        const product = this.getItem(id);
-        product.selectedSize = "s";
-        product.size = true;
-        
-        this.setState(() => {
-            return {
-                detailProduct: product,
-            }
-        }, () => {
-                this.nameButton(id);
-        });
-    }
-    mSize = (id) => {
-        const product = this.getItem(id);
-        product.selectedSize = "m";
-        product.size = true;
-        this.setState(() => {
-            return { detailProduct: product }
-        }, () => {
-            this.nameButton(id);
-        });
-    }
-    lSize = (id) => {
-        const product = this.getItem(id);
-        product.selectedSize = "l";
-        product.size = true;
-        this.setState(() => {
-            return { detailProduct: product }
-        },() => {
-            this.nameButton(id);
-        });
-    }
     openSmallDetail = (id) => {
         const product = this.getItem(id);
         this.setState(() => {
@@ -196,9 +142,6 @@ class ProductProvider extends Component {
                 ...this.state,
                 handleDetail: this.handleDetail,
                 addToCart: this.addToCart,
-                sSize: this.sSize,
-                mSize: this.mSize,
-                lSize: this.lSize,
                 openSmallDetail: this.openSmallDetail,
                 closeSmallDetail: this.closeSmallDetail,
                 incrementCount: this.incrementCount,
@@ -207,8 +150,7 @@ class ProductProvider extends Component {
                 calculationTotal: this.calculationTotal,
                 clearCart: this.clearCart,
                 getCartProduct: this.getCartProduct,
-                setProducts: this.setProducts,
-                nameButton: this.nameButton
+                setProducts: this.setProducts
 
 
             }}>

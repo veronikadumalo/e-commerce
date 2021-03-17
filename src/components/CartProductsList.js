@@ -6,7 +6,7 @@ export default function CartProductsList({ value }) {
     return (
         <div>
             {cart.map(item => {
-                return <CartProduct key={item.size} item={item} value={value}/>
+                return <CartProduct key={item.id} item={item} value={value}/>
             })}
         </div>
         );

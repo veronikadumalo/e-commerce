@@ -9,7 +9,7 @@ export default class SmallDetail extends Component {
 			<ProductConsumer>
 				{value => {
 					const { smallDetail, closeSmallDetail } = value;
-					const { img, title, price, selectedSize } = value.smallDetailProduct;
+					const { img, title, price } = value.smallDetailProduct;
 					if (!smallDetail) {
 						return null;
 					}
@@ -23,7 +23,6 @@ export default class SmallDetail extends Component {
 											<img src={img} alt="product" className="img-fluid p-3" />
 											<h4>{title}</h4>
 											<h6>{price}<span className="text-uppercase">uah</span></h6>
-											<h6>Size: {selectedSize}</h6>
 											<Link to="/">
 												<button
 													className="detail-button"
