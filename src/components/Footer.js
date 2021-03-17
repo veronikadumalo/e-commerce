@@ -7,7 +7,7 @@ export default class Footer extends Component {
     render() {
         return (
             <FooterContainer className=" w-100">
-                <div className="container mt-3 mb-0">
+                <div className="container pt-3">
                     <div className="row ">
                         <div className="col-lg-6 col-sm-6 mb-md-0 mr-auto">
                             <div className="d-flex align-items-start">
@@ -32,7 +32,7 @@ export default class Footer extends Component {
                     </div>
                     <div className="row mt-sm-3 mt-lg-1">
                         <div className="col text-center mx-auto">
-                            <p>Copyright &copy; {new Date().getFullYear()}, Veronika Dumalo</p>
+                            <p className="text-capitalize mb-0">copyright &copy; {new Date().getFullYear()}, veronika Dumalo</p>
                         </div>
                         
                     </div>  
@@ -45,8 +45,6 @@ export default class Footer extends Component {
 const FooterContainer = styled.div`
 background: var(--mainRed);
 color: var(--mainBrown);
-position:fixed;
-bottom:0;
 font-size: 0.8rem;
 .logo{
 width:5.5rem;

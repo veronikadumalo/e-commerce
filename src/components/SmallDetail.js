@@ -23,7 +23,7 @@ export default class SmallDetail extends Component {
 											<img src={img} alt="product" className="img-fluid p-3" />
 											<h4>{title}</h4>
 											<h6>{price}<span className="text-uppercase">uah</span></h6>
-											<Link to="/">
+											<Link to="/product">
 												<button
 													className="detail-button"
 													onClick={() => {

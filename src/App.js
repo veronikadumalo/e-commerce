@@ -18,16 +18,16 @@ function App() {
     return (
         <React.Fragment>
             <Navbar />
-            <Switch>
-                <Route exact path="/" component={Home} />
+            <Switch >
+                <Route exact path="/" component={Home}/>
                 <Route path="/product" component={ProductsList} />
                 <Route path="/details" component={Details} />
                 <Route path="/cart" component={Cart} />
                 <Route path="/contact" component={Contact} />
                 <Route component={Default} />
             </Switch>
-            <SmallDetail />
             <Footer />
+            <SmallDetail />
         </React.Fragment>
   );
 }

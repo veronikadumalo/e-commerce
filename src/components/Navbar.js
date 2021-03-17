@@ -21,7 +21,7 @@ export default class Navbar extends Component {
                             <button className="store-button">
                                 <span className="mr-2">
                                     <i className="fas fa-cart-plus mr-2" />
-                                    my cart
+                                    cart
                                 </span>
                             </button>
                         </Link>

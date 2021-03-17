@@ -34,7 +34,7 @@ export default class Details extends Component {
                                             }}
                                         >{inCart ? "in cart":"add to cart"}
                                         </button>
-                                            <Link to="/">
+                                            <Link to="product/">
                                                 <button className="detail-button ">back to products</button>
                                             </Link>  
                                     </div>

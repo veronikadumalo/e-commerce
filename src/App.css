@@ -8,6 +8,7 @@ body {
     font-family: 'Old Standard TT', serif !important;
     background: var(--mainWhite) !important;
     color: var(--mainBrown) !important;
+
 }
 .special-text {
     font-family: 'Satisfy', cursive;
@@ -82,6 +83,24 @@ body {
 .cart-icon:hover{
     color: var(--mainRed);
 }
+.banner-button {
+    position: absolute;
+    left: 45%;
+    top: 45%;
+    background: rgba(0,0,0,0.15);
+    color: var(--mainWhite);
+    border-color: var(--mainWhite);
+    padding:0.9rem;
+}
+.see-more-text{
+    color: var(--mainBrown);
+    cursor:pointer;
+}
+.see-more-text:hover{
+    color: var(--mainBrown);
+}
+
+
 
 
 
