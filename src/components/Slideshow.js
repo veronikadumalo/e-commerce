@@ -39,7 +39,7 @@ export default class Slideshow extends Component {
                     };
                     return (
                         <div>
-                            <div className="slide-container mr-auto">
+                            <div className="slide-container">
                             <Slide ref={this.slideRef} {...properties}>
                                 {moreImg.map((each, index) => (
                                     <div
