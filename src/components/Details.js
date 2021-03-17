@@ -22,7 +22,7 @@ export default class Details extends Component {
                                 <div className="col-10 col-md-6  mx-auto ">
                                     < Slideshow />
                                 </div>
-                                <div className="col-10 col-md-6 mx-auto text-capitalize pl-5 my-auto">
+                                <div className="col-10 col-md-6 mx-auto text-capitalize pl-5 my-auto ">
                                     <h1 className="">{title}</h1>
                                     <h4>{price}<span className="text-uppercase">uah</span></h4>
                                     <div className="pt-2">
