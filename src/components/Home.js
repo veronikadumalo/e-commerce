@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 
 export default class Home extends Component {
     render() {
+
         const banner = "img/banner3.jpg";
         const homeImgOne = "img/homeone.jpg";
         const homeImgTwo = "img/black-sportsuit1.jpg";
