@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 export default class Footer extends Component {
     render() {
         return (
-            <FooterContainer className=" w-100">
+            <FooterContainer className=" w-100 mt-4">
                 <div className="container pt-3">
                     <div className="row ">
                         <div className="col-lg-6 col-sm-6 mb-md-0 mr-auto">

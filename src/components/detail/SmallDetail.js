@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import { ProductConsumer } from '../context';
+import { ProductConsumer } from '../../context';
 import { Link } from 'react-router-dom';
 
 export default class SmallDetail extends Component {

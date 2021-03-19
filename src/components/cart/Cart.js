@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import Title from './Title';
-import { ProductConsumer } from '../context';
+import Title from '../Title';
+import { ProductConsumer } from '../../context';
 import CartSubTitles from './CartSubTitles';
 import CartProductsList from './CartProductsList';
 import CartTotalPrice from './CartTotalPrice';

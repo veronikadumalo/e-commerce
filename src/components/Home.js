@@ -11,7 +11,7 @@ export default class Home extends Component {
             <div>
                 <div className="container">
                     <div className="row mt-3 ">
-                        <div className="col-11 mx-auto">
+                        <div className="col-10 mx-auto">
                             <img src={banner} className="img-fluid" />
                             <Link to="/product">
                                 <button className="detail-button text-uppercase banner-button">

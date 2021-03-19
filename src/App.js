@@ -2,15 +2,15 @@ import './App.css';
 import React, { Component } from 'react';
 import { Switch, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
-import Cart from './components/Cart';
-import Details from './components/Details';
+import Cart from './components/cart/Cart';
+import Details from './components/detail/Details';
 import Default from './components/Navbar';
-import ProductsList from './components/ProductsList';
+import ProductsList from './components/products/ProductsList';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Footer from './components/Footer';
 import Contact from './components/Contact';
 import 'react-slideshow-image/dist/styles.css'
-import SmallDetail from './components/SmallDetail';
+import SmallDetail from './components/detail/SmallDetail';
 import Home from './components/Home';
 
 

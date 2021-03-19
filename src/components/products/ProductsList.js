@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import Title from './Title';
-import { storeProducts } from '../data';
-import { ProductConsumer } from '../context';
+import Title from '../Title';
+import { storeProducts } from '../../data';
+import { ProductConsumer } from '../../context';
 import Product from './Product';
 
 export default class ProductsList extends Component {

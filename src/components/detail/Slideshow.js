@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { ProductConsumer } from '../context';
+import { ProductConsumer } from '../../context';
 import { Slide } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css';
 import styled from 'styled-components';
