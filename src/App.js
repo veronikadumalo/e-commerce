@@ -8,7 +8,7 @@ import Default from './components/Navbar';
 import ProductsList from './components/products/ProductsList';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Footer from './components/Footer';
-import Contact from './components/Contact';
+import Contact from './components/contact/Contact';
 import 'react-slideshow-image/dist/styles.css'
 import SmallDetail from './components/detail/SmallDetail';
 import Home from './components/Home';
