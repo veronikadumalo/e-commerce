@@ -36,7 +36,7 @@ const ContactFrom =()=>{
         <div className="">
                     <div className="container">
                         <div className="row">
-                            <div className="col-8 mx-auto text-capitalize">
+                            <div className="col text-capitalize">
                                 <form id="contact-form" onSubmit={handleSubmit(onSubmit)} noValidate>
                                     <div className="form-group">
                                         <label for="name-input">name:</label>
@@ -49,9 +49,9 @@ const ContactFrom =()=>{
                                                 message:"Please use 30 charter or less"
                                             }
                                         })}
-                                        id="name-input" className="form-control formInput"></input>
+                                        id="name-input" className="form-control "></input>
                                         {errors.name &&
-                                        <span className="errorMessage">
+                                        <span className="errorMessage text-lowercase ">
                                             {errors.name.message}
                                         </span>}
                                     </div>
@@ -63,9 +63,9 @@ const ContactFrom =()=>{
                                             required: true,
                                             pattern: /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
                                         })}
-                                        id="email-input" className="form-control formInput"></input>
+                                        id="email-input" className="form-control "></input>
                                         {errors.email &&(
-                                            <span className="errorMessage">
+                                            <span className="errorMessage text-lowercase">
                                                 Please enter a valid email address
                                             </span>
                                         )}
@@ -78,14 +78,17 @@ const ContactFrom =()=>{
                                             required:true
                                         })}
                                         rows={3}
-                                        id="message" className="form-control formInput"></textarea>
+                                        id="message" className="form-control"></textarea>
                                         {errors.message && (
-                                            <span className="errorMessage">
+                                            <span className="errorMessage text-lowercase">
                                                 Please enter a message
                                             </span>
                                         )}
                                     </div>
-                                    <button type="submit" className="detail-button">send</button>
+                                    <div className="d-flex">
+                                        <button type="submit" className="detail-button mx-auto px-5">send</button>
+                                    </div>
+                                    
                                 </form>
                                 <ToastContainer />
                             </div>

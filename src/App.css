@@ -103,8 +103,11 @@ body {
 }
 .notification{
     font-family: 'Old Standard TT', serif !important;
-    color: var(--mailRed);
     text-align: center;
+}
+.errorMessage{
+    font-size:0.8rem;
+    color:var(--mainRed);
 }
 
 
