@@ -1,10 +1,10 @@
 import './App.css';
 import React, { Component } from 'react';
 import { Switch, Route } from 'react-router-dom';
-import Navbar from './components/Navbar';
+import Navbar from './components/navbar/Navbar';
 import Cart from './components/cart/Cart';
 import Details from './components/detail/Details';
-import Default from './components/Navbar';
+import Default from './components/navbar/Navbar';
 import ProductsList from './components/products/ProductsList';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Footer from './components/Footer';
