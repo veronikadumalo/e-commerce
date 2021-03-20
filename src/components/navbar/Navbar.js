@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../../logo.jpg';
-import {ProductConsumer} from '../../context';
+import NavbarButton from './NavbarButton';
 
 export default class Navbar extends Component {
     render() {
@@ -19,11 +19,7 @@ export default class Navbar extends Component {
                                 </li>
                                 <li>
                                     <Link to="/cart" className="">                                       
-                                        <button className="store-button">
-                                            <span className="mr-2">
-                                                <i className="fas fa-cart-plus mr-2" /> cart
-                                            </span>
-                                        </button>
+                                        <NavbarButton />
                                     </Link>
                                 </li>
                             </ul>
