@@ -101,6 +101,11 @@ body {
 .see-more-text:hover{
     color: var(--mainBrown);
 }
+.notification{
+    font-family: 'Old Standard TT', serif !important;
+    color: var(--mailRed);
+    text-align: center;
+}
 
 
 

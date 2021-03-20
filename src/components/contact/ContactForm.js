@@ -1,22 +1,37 @@
 import {useForm} from 'react-hook-form';
 import emailjs from 'emailjs-com';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const ContactFrom =()=>{
     const {register, errors, handleSubmit, reset} = useForm();
-    const onSubmit =async(data) => {
-        var templateParams = {
-        name: data.neme,
-        email: data.email,
-        message: data.message
-    };
-     
-    emailjs.send('service_8v0rzxv', 'template_56ivcrq', templateParams, 'user_KRrg2nnLUTABqmaan9HXd')
-        .then(function(response) {
-           console.log('SUCCESS!', response.status, response.text);
-        }, function(error) {
-           console.log('FAILED...', error);
+    const toastifySuccess = () => {
+        toast('your email was successfully sent!', {
+          position: 'top-center',
+          autoClose: 5000,
+          hideProgressBar: true,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: false,
+          className: 'submit-feedback success text-uppercase notification',
+          toastId: 'notifyToast'
         });
-        }
+      };
+    
+        const onSubmit = async (data) => {
+            try {
+                const templateParams = {
+                    name: data.name,
+                    email: data.email,
+                    message: data.message
+                };
+                await emailjs.send('service_8v0rzxv', 'template_56ivcrq', templateParams, 'user_KRrg2nnLUTABqmaan9HXd');
+                reset();
+                toastifySuccess();
+            } catch (e) {
+                console.log(e);
+            }
+          };
     return(
         <div className="">
                     <div className="container">
@@ -72,6 +87,7 @@ const ContactFrom =()=>{
                                     </div>
                                     <button type="submit" className="detail-button">send</button>
                                 </form>
+                                <ToastContainer />
                             </div>
                         </div>
                     </div>
