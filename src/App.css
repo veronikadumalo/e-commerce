@@ -109,6 +109,9 @@ body {
     font-size:0.8rem;
     color:var(--mainRed);
 }
+.height-container{
+    min-height: 64.9vh;
+}
 
 
 

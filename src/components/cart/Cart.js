@@ -9,7 +9,7 @@ import CartTotalPrice from './CartTotalPrice';
 export default class Cart extends Component {
     render() {
         return (
-            <ProductConsumer className="height-container">
+            <ProductConsumer className="">
                 {value => {
                     const { cart } = value;
                     console.log(cart);
@@ -26,8 +26,8 @@ export default class Cart extends Component {
                     else {
                         return (
                             <React.Fragment>
-                                <div className="h-100">
-                                    <Title title="your cart is currently empty" />
+                                <div className="height-container">
+                                    <Title title="your cart is currently empty"  />
                                 </div> 
                             </React.Fragment>
                         );
