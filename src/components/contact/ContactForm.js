@@ -1,11 +1,21 @@
 import {useForm} from 'react-hook-form';
+import emailjs from 'emailjs-com';
 
 const ContactFrom =()=>{
     const {register, errors, handleSubmit, reset} = useForm();
     const onSubmit =async(data) => {
-        console.log('name', data.name);
-        console.log('email', data.email);
-        console.log('message', data.message);
+        var templateParams = {
+        name: data.neme,
+        email: data.email,
+        message: data.message
+    };
+     
+    emailjs.send('service_8v0rzxv', 'template_56ivcrq', templateParams, 'user_KRrg2nnLUTABqmaan9HXd')
+        .then(function(response) {
+           console.log('SUCCESS!', response.status, response.text);
+        }, function(error) {
+           console.log('FAILED...', error);
+        });
         }
     return(
         <div className="">
