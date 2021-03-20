@@ -10,7 +10,7 @@ export default class Contact extends Component {
             <React.Fragment>
                 <Title title="contact us" />
                 <div className="container mb-5 mt-1">
-                    <h4 className="text-center">Got a quation? We`d <i className="far fa-heart"></i> to halp you</h4>
+                    <h4 className="text-center">Got a quation? We`d <i className="far fa-heart"></i> to help You!</h4>
                     <div className="row mx-auto">
                         <div className="col-10 col-lg-7 mx-auto">
                            <ContactFrom /> 
