@@ -13,7 +13,7 @@ class ProductProvider extends Component {
         cartSubtotal: 0,
         cartTax : 50,
         cartTotal: 0,
-       
+        totalCartItem: 0
     };
     setProducts = () => {
         let tempProducts = [];
@@ -47,9 +47,10 @@ class ProductProvider extends Component {
         const price = product.price;
         product.total = price;
         this.setState(() => {
-            return { products: tempProducts, cart: [...this.state.cart, product] };
+            return { products: tempProducts, cart: [...this.state.cart, product]};
         }, () => {
             this.calculationTotal();
+            this.countCartItem();
         })
         
     };
@@ -111,6 +112,7 @@ class ProductProvider extends Component {
             }
         }, () => {
                 this.calculationTotal();
+                this.countCartItem();
         });
     }
     calculationTotal = () => {
@@ -130,10 +132,16 @@ class ProductProvider extends Component {
         }, () => {
                 this.calculationTotal();
                 this.setProducts();
+                this.countCartItem();
                 
         });
     }
-    
+    countCartItem=()=>{
+        let cartItem = this.state.cart.length;
+        this.setState(()=>{
+            return{totalCartItem:cartItem}
+        })
+    }
     
     
     render() {
@@ -150,7 +158,8 @@ class ProductProvider extends Component {
                 calculationTotal: this.calculationTotal,
                 clearCart: this.clearCart,
                 getCartProduct: this.getCartProduct,
-                setProducts: this.setProducts
+                setProducts: this.setProducts,
+                countCartItem: this.countCartItem
 
 
             }}>
