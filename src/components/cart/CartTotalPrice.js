@@ -8,7 +8,7 @@ export default function CartTotalPrice({ value }) {
             <div className="container mt-5">
                 <div className="row">
                     <div className="col mt-1 text-capitalize text-right ">
-                        <Link to="/">
+                        <Link to="/e-commerce">
                             <button className="text-uppercase mb-5 detail-button"
                                 type="button"
                                 onClick={clearCart}
