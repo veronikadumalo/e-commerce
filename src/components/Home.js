@@ -10,8 +10,8 @@ export default class Home extends Component {
         return (
             <div>
                 <div className="container">
-                    <div className="row mt-3 ">
-                        <div className="col-10 mx-auto">
+                    <div className="row my-2">
+                        <div className="col-12 col-md-11 mx-auto">
                             <img src={banner} className="img-fluid" />
                             <Link to="/e-commerce/product">
                                 <button className="detail-button text-uppercase banner-button">
@@ -23,21 +23,20 @@ export default class Home extends Component {
                     </div>
                 </div>
                 <div className="container-fluid">
-                    <div className="row mt-4 mb-4 d-flex align-items-center">
-                        <div className="col-3">
+                    <div className="row mb-4 d-flex align-items-center px-3 ">
+                        <div className="col-6 col-md-3 p-1">
                             <img src={homeImgTwo} alt="product" className="img-fluid" />
                         </div>
-                        <div className="col-3">
+                        <div className="col-6 col-md-3 p-1">
                             <img src={homeImgOne} alt="product" className="img-fluid" />
                         </div>
-                        <div className="col-3 text-center">
-                            <h3 className="text-uppercase d-none d-xl-block">comfort and style</h3>
-                            <p className="text-uppercase d-xl-none mb-0">comfort and style</p>
+                        <div className="col-6 col-md-3 text-center ">
+                            <h3 className="text-uppercase ">comfort and style</h3>
                             <Link to="/e-commerce/product" className="see-more-text">
                                 see more <i className="fas fa-arrow-right align-middle" />
                             </Link>
                         </div>
-                        <div className="col-3">
+                        <div className="col-6 col-md-3 p-1">
                             <img src={homeImgThree} alt="product" className="img-fluid" />
                         </div>
                     </div>
