@@ -15,8 +15,8 @@ body {
     color: var(--mainBrown);
 }
 .logo-store{
-    width:auto;
-    height:6rem;
+    width:5rem;
+    height:auto;
 }
 .navbar{
     background: var(--mainRed);
