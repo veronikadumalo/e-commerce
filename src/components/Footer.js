@@ -6,10 +6,10 @@ import { Link } from 'react-router-dom';
 export default class Footer extends Component {
     render() {
         return (
-            <FooterContainer className=" w-100 mt-4">
+            <FooterContainer className=" mt-3">
                 <div className="container pt-3">
                     <div className="row ">
-                        <div className="col-lg-6 col-sm-6 mb-md-0 mr-auto">
+                        <div className="col-lg-6 col-9 mb-md-0 mr-auto">
                             <div className="d-flex align-items-start">
                                 <img src={logo} alt="logo" className="img-fluid logo mr-3" />
                                 <div>
@@ -21,10 +21,10 @@ export default class Footer extends Component {
                             </div>
                             
                         </div>
-                        <div className="col-lg-2 col-sm-5 mb-md-0 d-flex ml-lg-auto ml-sm-auto ">
-                            <h5 className="text-capitalize my-auto">follow us</h5>
+                        <div className="col-3 col-md-2 mb-md-0 d-flex justify-content-center">
+                            <h5 className="text-capitalize my-auto d-none d-lg-block">follow us</h5>
                             <ul className="list-inline my-auto">
-                                <li className="list-inline-item ml-3"><Link to=""><i className="fa fa-instagram" /></Link></li>
+                                <li className="list-inline-item ml-lg-3 ml-md-1"><Link to=""><i className="fa fa-instagram" /></Link></li>
                                 <li className="list-inline-item ml-1"><Link to=""><i className="fa fa-facebook" /></Link></li>
                             </ul>
                         </div>
@@ -46,14 +46,16 @@ const FooterContainer = styled.div`
 background: var(--mainRed);
 color: var(--mainBrown);
 font-size: 0.8rem;
+@media screen and (max-width: 600px) {
+    font-size: 0.6rem;
+}
 .logo{
-width:5.5rem;
+width:5rem;
 height:auto;
-
 }
 .fa{
 color:var(--mainBrown);
-font-size: 1.5rem;
+font-size: 1.4rem;
 cursor: point;
 }
 .fa:hover{
