@@ -9,9 +9,9 @@ export default class Home extends Component {
     render() {
         return (
             <div>
-                <div className="container">
+                <div className="container-md">
                     <div className="row my-2">
-                        <div className="col-12 col-md-11 mx-auto">
+                        <div className="col-12 col-md-12 col-lg-11 mx-auto">
                             <img src={banner} className="img-fluid" />
                             <Link to="/e-commerce/product">
                                 <button className="detail-button text-uppercase banner-button">
@@ -24,23 +24,24 @@ export default class Home extends Component {
                 </div>
                 <div className="container-fluid">
                     <div className="row mb-4 d-flex align-items-center px-3 ">
-                        <div className="col-6 col-md-3 p-1">
+                        <div className="col-6 col-md-5 col-lg-3 p-1">
                             <img src={homeImgTwo} alt="product" className="img-fluid" />
                         </div>
-                        <div className="col-6 col-md-3 p-1">
+                        <div className="col-6 col-md-5 col-lg-3 p-1">
                             <img src={homeImgOne} alt="product" className="img-fluid" />
                         </div>
-                        <div className="col-6 col-md-3 text-center ">
+                        <div className="col-6 col-md-5 col-lg-3 text-center ">
                             <h3 className="text-uppercase ">comfort and style</h3>
                             <Link to="/e-commerce/product" className="see-more-text">
                                 see more <i className="fas fa-arrow-right align-middle" />
                             </Link>
                         </div>
-                        <div className="col-6 col-md-3 p-1">
+                        <div className="col-6 col-md-5 col-lg-3 p-1">
                             <img src={homeImgThree} alt="product" className="img-fluid" />
                         </div>
                     </div>
                 </div>
+                
                 
             </div>
             );

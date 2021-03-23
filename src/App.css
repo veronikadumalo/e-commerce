@@ -110,7 +110,11 @@ body {
     color:var(--mainRed);
 }
 .height-container{
-    min-height: 64.9vh;
+    min-height: 72vh;
+}
+.footer-bottom{
+    position:fixed !important;
+    bottom:0 !important;
 }
 
 

@@ -7,11 +7,11 @@ import Details from './components/detail/Details';
 import Default from './components/navbar/Navbar';
 import ProductsList from './components/products/ProductsList';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Footer from './components/Footer';
 import Contact from './components/contact/Contact';
 import 'react-slideshow-image/dist/styles.css'
 import SmallDetail from './components/detail/SmallDetail';
 import Home from './components/Home';
+import Footer from './components/Footer';
 
 
 function App() {
@@ -26,8 +26,8 @@ function App() {
                 <Route path="/e-commerce/contact" component={Contact} />
                 <Route component={Default} />
             </Switch>
-            <Footer />
             <SmallDetail />
+            <Footer />
         </React.Fragment>
   );
 }

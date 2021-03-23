@@ -4,6 +4,7 @@ import { ProductConsumer } from '../../context';
 import CartSubTitles from './CartSubTitles';
 import CartProductsList from './CartProductsList';
 import CartTotalPrice from './CartTotalPrice';
+import Footer from '../Footer';
 
 
 export default class Cart extends Component {
