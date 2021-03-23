@@ -18,7 +18,7 @@ export default class Product extends Component {
                                 onClick={() => {
                                     value.handleDetail(id);
                                 }}>
-                                <Link to="/details">
+                                <Link to="/e-commerce/details">
                                     <HoverImage src={img}
                                         alt="product"
                                         className="card-img-top"

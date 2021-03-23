@@ -19,11 +19,11 @@ function App() {
         <React.Fragment>
             <Navbar />
             <Switch >
-                <Route exact path="/" component={Home}/>
-                <Route path="/product" component={ProductsList} />
-                <Route path="/details" component={Details} />
-                <Route path="/cart" component={Cart} />
-                <Route path="/contact" component={Contact} />
+                <Route exact path="/e-commerce" component={Home}/>
+                <Route path="/e-commerce/product" component={ProductsList} />
+                <Route path="/e-commerce/details" component={Details} />
+                <Route path="/e-commerce/cart" component={Cart} />
+                <Route path="/e-commerce/contact" component={Contact} />
                 <Route component={Default} />
             </Switch>
             <Footer />

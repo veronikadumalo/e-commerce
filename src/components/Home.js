@@ -1,20 +1,19 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import banner from './img/banner3.jpg';
+import homeImgOne from './img/homeone.jpg';
+import homeImgTwo from './img/black-sportsuit1.jpg';
+import homeImgThree from './img/grey-sportsuit.jpg';
 
 export default class Home extends Component {
     render() {
-
-        const banner = "img/banner3.jpg";
-        const homeImgOne = "img/homeone.jpg";
-        const homeImgTwo = "img/black-sportsuit1.jpg";
-        const homeImgThree = "img/grey-sportsuit.jpg";
         return (
             <div>
                 <div className="container">
                     <div className="row mt-3 ">
                         <div className="col-10 mx-auto">
                             <img src={banner} className="img-fluid" />
-                            <Link to="/product">
+                            <Link to="/e-commerce/product">
                                 <button className="detail-button text-uppercase banner-button">
                                     start shoping
                                 </button>
@@ -32,8 +31,9 @@ export default class Home extends Component {
                             <img src={homeImgOne} alt="product" className="img-fluid" />
                         </div>
                         <div className="col-3 text-center">
-                            <h3 className="text-uppercase ">comfort and style</h3>
-                            <Link to="/product" className="see-more-text">
+                            <h3 className="text-uppercase d-none d-xl-block">comfort and style</h3>
+                            <p className="text-uppercase d-xl-none mb-0">comfort and style</p>
+                            <Link to="/e-commerce/product" className="see-more-text">
                                 see more <i className="fas fa-arrow-right align-middle" />
                             </Link>
                         </div>

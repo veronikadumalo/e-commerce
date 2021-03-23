@@ -23,7 +23,7 @@ export default class SmallDetail extends Component {
 											<img src={img} alt="product" className="img-fluid p-3" />
 											<h4>{title}</h4>
 											<h6>{price}<span className="text-uppercase">uah</span></h6>
-											<Link to="/product">
+											<Link to="/e-commerce/product">
 												<button
 													className="detail-button"
 													onClick={() => {
@@ -31,7 +31,7 @@ export default class SmallDetail extends Component {
 												}}>continue shopping
 												</button>
 											</Link>
-											<Link to="/cart">
+											<Link to="/e-commerce/cart">
 												<button
 													className="detail-button"
 													onClick={() => {
