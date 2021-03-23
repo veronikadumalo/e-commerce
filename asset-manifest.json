@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/e-commerce/static/css/main.6ad5a2c7.chunk.css",
-    "main.js": "/e-commerce/static/js/main.73946cf5.chunk.js",
-    "main.js.map": "/e-commerce/static/js/main.73946cf5.chunk.js.map",
+    "main.css": "/e-commerce/static/css/main.1a07e166.chunk.css",
+    "main.js": "/e-commerce/static/js/main.25275f7f.chunk.js",
+    "main.js.map": "/e-commerce/static/js/main.25275f7f.chunk.js.map",
     "runtime-main.js": "/e-commerce/static/js/runtime-main.f8e6512d.js",
     "runtime-main.js.map": "/e-commerce/static/js/runtime-main.f8e6512d.js.map",
     "static/css/2.30c45c5f.chunk.css": "/e-commerce/static/css/2.30c45c5f.chunk.css",
-    "static/js/2.367b537d.chunk.js": "/e-commerce/static/js/2.367b537d.chunk.js",
-    "static/js/2.367b537d.chunk.js.map": "/e-commerce/static/js/2.367b537d.chunk.js.map",
+    "static/js/2.9642b850.chunk.js": "/e-commerce/static/js/2.9642b850.chunk.js",
+    "static/js/2.9642b850.chunk.js.map": "/e-commerce/static/js/2.9642b850.chunk.js.map",
     "static/js/3.e7cf1d19.chunk.js": "/e-commerce/static/js/3.e7cf1d19.chunk.js",
     "static/js/3.e7cf1d19.chunk.js.map": "/e-commerce/static/js/3.e7cf1d19.chunk.js.map",
     "index.html": "/e-commerce/index.html",
     "static/css/2.30c45c5f.chunk.css.map": "/e-commerce/static/css/2.30c45c5f.chunk.css.map",
-    "static/css/main.6ad5a2c7.chunk.css.map": "/e-commerce/static/css/main.6ad5a2c7.chunk.css.map",
-    "static/js/2.367b537d.chunk.js.LICENSE.txt": "/e-commerce/static/js/2.367b537d.chunk.js.LICENSE.txt",
+    "static/css/main.1a07e166.chunk.css.map": "/e-commerce/static/css/main.1a07e166.chunk.css.map",
+    "static/js/2.9642b850.chunk.js.LICENSE.txt": "/e-commerce/static/js/2.9642b850.chunk.js.LICENSE.txt",
     "static/media/banner3.d173b11d.jpg": "/e-commerce/static/media/banner3.d173b11d.jpg",
     "static/media/black-sportsuit1.7b7b8353.jpg": "/e-commerce/static/media/black-sportsuit1.7b7b8353.jpg",
     "static/media/grey-sportsuit.c2de10f5.jpg": "/e-commerce/static/media/grey-sportsuit.c2de10f5.jpg",
@@ -23,8 +23,8 @@
   "entrypoints": [
     "static/js/runtime-main.f8e6512d.js",
     "static/css/2.30c45c5f.chunk.css",
-    "static/js/2.367b537d.chunk.js",
-    "static/css/main.6ad5a2c7.chunk.css",
-    "static/js/main.73946cf5.chunk.js"
+    "static/js/2.9642b850.chunk.js",
+    "static/css/main.1a07e166.chunk.css",
+    "static/js/main.25275f7f.chunk.js"
   ]
 }
