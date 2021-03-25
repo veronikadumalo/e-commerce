@@ -6,7 +6,7 @@
 }
 #root{
     position: relative;
-    min-height: 98vh;
+    min-height: 100vh;
 }
 body {
     font-family: 'Old Standard TT', serif !important;
