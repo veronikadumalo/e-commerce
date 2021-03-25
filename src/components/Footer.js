@@ -24,8 +24,8 @@ export default class Footer extends Component {
                         <div className="col-3 col-md-2 mb-md-0 d-flex justify-content-center">
                             <h5 className="text-capitalize my-auto d-none d-lg-block">follow us</h5>
                             <ul className="list-inline my-auto">
-                                <li className="list-inline-item ml-lg-3 ml-md-1"><Link to=""><i className="fa fa-instagram" /></Link></li>
-                                <li className="list-inline-item ml-1"><Link to=""><i className="fa fa-facebook" /></Link></li>
+                                <li className="list-inline-item ml-lg-3 ml-md-1"><i className="fa fa-instagram" /></li>
+                                <li className="list-inline-item ml-1"><i className="fa fa-facebook" /></li>
                             </ul>
                         </div>
                         

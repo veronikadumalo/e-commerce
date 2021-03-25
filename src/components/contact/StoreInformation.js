@@ -4,7 +4,7 @@ export default class StoreInformation extends Component{
     render(){
         return(
             <div className="container text-capitalize text-center ">
-                <h5 className="text-uppercase mb-4 mx-auto">contact info</h5>
+                <h5 className="text-uppercase mb-4 ">contact info</h5>
                 <div className="row ">
                     <i className="fas fa-phone mr-4"></i>
                     <p>+38 063 567-43-45 </p>
