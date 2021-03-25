@@ -4,15 +4,18 @@
     --mainBrown: #a15445;
     --darkBrown: #592f26;
 }
+#root{
+    position: relative;
+    min-height: 98vh;
+}
 body {
     font-family: 'Old Standard TT', serif !important;
     background: var(--mainWhite) !important;
     color: var(--mainBrown) !important;
 
 }
-.special-text {
-    font-family: 'Satisfy', cursive;
-    color: var(--mainBrown);
+.content-wrap{
+    padding-bottom: 8rem;
 }
 .logo-store{
     width:5rem;
@@ -110,7 +113,7 @@ body {
     color:var(--mainRed);
 }
 .height-container{
-    min-height: 72vh;
+    
 }
 .footer-bottom{
     position:fixed !important;

@@ -17,17 +17,21 @@ import Footer from './components/Footer';
 function App() {
     return (
         <React.Fragment>
-            <Navbar />
-            <Switch >
-                <Route exact path="/e-commerce" component={Home}/>
-                <Route path="/e-commerce/product" component={ProductsList} />
-                <Route path="/e-commerce/details" component={Details} />
-                <Route path="/e-commerce/cart" component={Cart} />
-                <Route path="/e-commerce/contact" component={Contact} />
-                <Route component={Default} />
-            </Switch>
-            <SmallDetail />
+            <div className="content-wrap">
+                <Navbar />
+                <Switch >
+                    <Route exact path="/e-commerce" component={Home}/>
+                    <Route path="/e-commerce/product" component={ProductsList} />
+                    <Route path="/e-commerce/details" component={Details} />
+                    <Route path="/e-commerce/cart" component={Cart} />
+                    <Route path="/e-commerce/contact" component={Contact} />
+                    <Route component={Default} />
+                </Switch>
+            </div>
+            
             <Footer />
+            <SmallDetail />
+            
         </React.Fragment>
   );
 }

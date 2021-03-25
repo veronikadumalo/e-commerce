@@ -47,6 +47,8 @@ background: var(--mainRed);
 color: var(--mainBrown);
 font-size: 0.8rem;
 width:100%;
+position: absolute;
+bottom:0;
 @media screen and (max-width: 600px) {
     font-size: 0.6rem;
 }
