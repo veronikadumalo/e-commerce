@@ -4,7 +4,7 @@ import { Switch, Route } from 'react-router-dom';
 import Navbar from './components/navbar/Navbar';
 import Cart from './components/cart/Cart';
 import Details from './components/detail/Details';
-import Default from './components/navbar/Navbar';
+import Default from './components/Default';
 import ProductsList from './components/products/ProductsList';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Contact from './components/contact/Contact';
@@ -28,7 +28,6 @@ function App() {
                     <Route component={Default} />
                 </Switch>
             </div>
-            
             <Footer />
             <SmallDetail />
             
